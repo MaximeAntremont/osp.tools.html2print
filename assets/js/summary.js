@@ -13,7 +13,7 @@ var summary_selector = "#summary",
 
     $summary = $(summary_selector),
     $sl = $(wrap(list_element)).addClass(list_element_class),
-    $parties = $("body h1");
+    $parties = $("body h1, body h2, body h3");
 
     $summary.append($sl);
 
@@ -30,14 +30,29 @@ $parties.each(function(index){
             if(typeof(fragment) != 'undefined'){
                 var $current_list_element = $(wrap(list_children_element, self.textContent)),
                     $page_indicator = $(wrap("span")),
-                    parent_page = $("[data-css-regions-fragment-of='"+fragment+"'"),
-                    page_number = parent_page.parents("div.paper[id^='page']").attr("id").match(/\d{1,5}/g)[0];
+                    parent_page = $("[data-css-regions-fragment-of='"+fragment+"']");
+
+                $current_list_element.append($page_indicator);
+                $sl.append($current_list_element);
+
+                var page_number = parent_page.parents("div.paper[id^='page']").attr("id").match(/\d{1,5}/g)[0];
+
                 $page_indicator.addClass("summary_element");
                 $page_indicator.text(page_number);
 
-                $current_list_element.append($page_indicator);
+                $page_indicator[0]._summary_js = {};
 
-                $sl.append($current_list_element);
+                $page_indicator[0]._summary_js.interval = setInterval(
+                    function(){
+                        var fragment = $self.attr("data-css-regions-fragment-source");
+                        var parent_page = $("[data-css-regions-fragment-of='"+fragment+"']");
+                        var page_number = parent_page.parents("div.paper[id^='page']").attr("id").match(/\d{1,5}/g)[0];
+                        $page_indicator.text(page_number);
+                        window.clearInterval($page_indicator[0]._summary_js.interval);
+                    }, 3000
+                );
+
+
 
                 window.clearInterval(interval);
             }
