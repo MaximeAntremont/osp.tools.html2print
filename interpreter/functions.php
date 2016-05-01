@@ -7,6 +7,11 @@
  */
 
 function parse_file($file_name){
-    $cmd = "ruby kramdown_parser.rb --args";
-    echo system($cmd);
+    // Le chemin absolu de ruby doit être utilisé, à voir après inclusion dans les variables d'environnement et redemarrage
+    $cmd = "C:/Ruby23-x64/bin/ruby.exe ./interpreter/kramdown_parser.rb ".$file_name;
+    system($cmd);
+}
+
+function show_directory(){
+    echo getcwd();
 }
