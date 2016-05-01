@@ -1,4 +1,4 @@
 // Local settings
 var nb_page = 24;
-var content = "content.html";
+var content = "content.php";
 
