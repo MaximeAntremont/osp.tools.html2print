@@ -30,7 +30,7 @@ $parties.each(function(index){
             if(typeof(fragment) != 'undefined'){
                 var $current_list_element = $(wrap(list_children_element, self.textContent)),
                     $page_indicator = $(wrap("span")),
-                    parent_page = $("[data-css-regions-fragment-of='"+fragment+"']");
+                    parent_page = $("[data-css-regions-fragment-of='"+fragment+"']").parents("div.paper[id^='page']");
 
                 $current_list_element.addClass(function(){
                     var index = parseInt(self.nodeName.match(/\d{1,5}/g)[0]);
@@ -60,32 +60,33 @@ $parties.each(function(index){
                     }
                 }());
 
-                $current_list_element.append($page_indicator);
-                $sl.append($current_list_element);
+                if(parent_page.length > 0) {
+                    $current_list_element.append($page_indicator);
+                    $sl.append($current_list_element);
+                    window.clearInterval(interval);
 
-                var page_number = parent_page.parents("div.paper[id^='page']").attr("id").match(/\d{1,5}/g)[0];
+                    console.log(parent_page, fragment);
 
-                $page_indicator.addClass("summary_element");
-                $page_indicator.text(page_number);
+                    var page_number = parent_page.attr("id").match(/\d{1,5}/g)[0];
 
-                $page_indicator[0]._summary_js = {};
+                    $page_indicator.addClass("summary_element");
+                    $page_indicator.text(page_number);
 
-                $page_indicator[0]._summary_js.interval = setInterval(
-                    function(){
-                        var fragment = $self.attr("data-css-regions-fragment-source");
-                        var parent_page = $("[data-css-regions-fragment-of='"+fragment+"']").parents("div.paper[id^='page']");
-                        console.log(parent_page);
-                        var page_number = parent_page.attr("id").match(/\d{1,5}/g)[0];
-                        $page_indicator.text(page_number);
-                        if(typeof(page_number) != 'undefined'){
-                            window.clearInterval($page_indicator[0]._summary_js.interval);
-                        }
-                    }, 3000
-                );
+                    $page_indicator[0]._summary_js = {};
 
-
-
-                window.clearInterval(interval);
+                    $page_indicator[0]._summary_js.interval = setInterval(
+                        function(){
+                            var fragment = $self.attr("data-css-regions-fragment-source");
+                            var parent_page = $("[data-css-regions-fragment-of='"+fragment+"']").parents("div.paper[id^='page']");
+                            console.log(parent_page);
+                            var page_number = parent_page.attr("id").match(/\d{1,5}/g)[0];
+                            $page_indicator.text(page_number);
+                            if(typeof(page_number) != 'undefined'){
+                                window.clearInterval($page_indicator[0]._summary_js.interval);
+                            }
+                        }, 3000
+                    );
+                }
             }
         }
     ,1000);
