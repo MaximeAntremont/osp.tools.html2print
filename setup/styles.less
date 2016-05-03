@@ -1,4 +1,8 @@
 /* Here you can put your specific typography, layout styles. */
+*{
+  font-family: "Roboto", sans-serif;
+}
+
 .summary_element{
   float: right;
 }
@@ -15,4 +19,25 @@ pre, code.code{
   white-space: -pre-wrap; /* Opera 4-6 */
   white-space: -o-pre-wrap; /* Opera 7 */
   word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.summary_list{
+  line-height: 28px;
+  .title{
+
+  }
+  .subtitle{
+    list-style: circle;
+    font-size: 0.85em;
+    margin-left: 15px;
+  }
+  .argument{
+    list-style: rectangle;
+    font-size: 0.80em;
+    margin-left: 30px;
+  }
+}
+
+.legende{
+  font-size: 0.80em;
 }
