@@ -5,8 +5,8 @@ Terrain
 {: #terrain}
 
 ## Contexte
-J'occupe le poste de designer interactif au Musée des Confluences. Mon travail est de conseiller l'équipe de médiation culturelle sur l'usage du numérique dans les activités misent en places. J'assure aussi la réalisation technique des solutions que je conçois. L'équipe de médiation et programmation cuturels dans laquelle j'oeuvre est constituée de neuf personnes :
-+ Mediation culturelle
+J'occupe le poste de designer interactif au Musée des Confluences. Mon travail est de conseiller l'équipe de médiation culturelle sur l'usage du numérique dans les activités misent en places. J'assure aussi la réalisation technique des solutions que je conçois. L'équipe de médiation et programmation culturelle dans laquelle j’œuvre est constituée de neuf personnes :
++ Médiation culturelle
     + deux personnes chargée de médiation culturelle : ateliers, temps de médiations en salle, visite, etc.,
     + une personne dédiée aux visites et activités du public scolaire,
     + moi-même, en tant que designer interactif pour ce pôle,
