@@ -30,9 +30,11 @@
         <div id="summary">
             <!-- Ici le plugins summary js va mettre le sommaire -->
         </div>
+        <div class="region-break"></div>
         <?php
             foreach ($files_to_load as $file) {
                 parse_file($file);
+                echo "<div class='region-break'></div>";
             }
         ?>
         <script src="./assets/js/summary.js"></script>
