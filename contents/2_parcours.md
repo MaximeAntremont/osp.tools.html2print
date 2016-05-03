@@ -32,7 +32,9 @@ Cette syntaxe est ensuite interprétée, dans mon cas dans un navigateur web, po
 
 J'ai écris l'année passée un autre logiciel de mise en forme de mes notes pour mon précédent mémoire. Cela m'a permis de noter le fil de ma pensée dans la forme qui me semblait la plus adapter aux questionnements des concepts mais aussi à la rédaction qui allait en découler.
 
-![Image de unit_symfony](http://lorempixel.com/400/200/cats/Image%20de%20unit%20symdony/)
+![Image de unit_symfony](./assets/img/unit-symfony_memoire_dsaa.jpg)
+*L'outil permettait d'écrire des notes sous formes de "billets" et de répondre à chaque billet par un autre. La forme me semblait adapter pour noter et discuter des concepts et des notions issus de mes lectures de référence*
+{: .legende}
 
 J'ai pus, cette année là, développer la question du passage du régime du papier au régime numérique, dans mon mémoire "Comment penser sur écran". J'ai aussi, durant cette même année, été sensibilisé à une pratique ethnographique appliquée au design, ce qui a ouvert mes perspectives et donné l'envie de faire un master 2 en éthnométhodologie.
 

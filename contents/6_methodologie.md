@@ -22,14 +22,6 @@ Cette bibliographie me permet de m'approprier des hypothèses sur le rapport ent
 numérique et l'Homme, les processus mis en place durant leur usage, les processus mis en place au
 moment de leur conception.
 
-## Le village
-Le village sera constitué de moi-même et de l'équipe de médiation du Musée des Confluences.
-J'apporterais, en tant que membres du village des concepteurs de logiciels, mon retour d'expérience
-sur toute la phase de conception des interfaces numériques. Une partie de l'équipe de médiation
-ayant travaillée avec moi sur ces questions me fournira aussi un retour. Je chercherais, auprès des
-autres membres, les allants-de-soit, les influences, les paradigmes, qui régissent leur rapport aux
-interfaces numériques.
-
 ## Recueil d'informations sur l'usage
 J'aimerais recueillir auprès des membres du village une documentation de leur pratique en tant de se
 construire. Pour ce faire, j'appareillerais les ordinateurs de ceux qui sont volontaires, d'un logiciel

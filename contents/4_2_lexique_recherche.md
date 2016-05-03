@@ -22,8 +22,9 @@ Dans sa théorie du support, B.Bachimont (Bachimont, 2010) parle aussi de désé
 l'écrit dans le support dans le support numérique. La manipulation calculatoire du numérique ne
 relève pour lui pas du sens mais bien du calcul, de l’algorithme.
 
-## Document (Y.Jeanneret)
-On peut définir le document par un "espace documentaire", à savoir la partie du support qui présente l'information. Pour Y.Jeanneret, le document est ce qui fonde une "proposition communicationelle", un espace visuel hiérarchisé appréhendable pour l'utilisateur, proposant des modalités de lectures.
+## Document
++ On peut définir le document par un "espace documentaire", à savoir la partie du support qui présente l'information. Pour Y.Jeanneret, le document est ce qui fonde une "proposition communicationelle", un espace visuel hiérarchisé appréhendable pour l'utilisateur, proposant des modalités de lectures. (Y.Jeanneret)
++ En informatique le terme prête à confusion. On parle de « document » alors q'on ne peut le comparer à un document papier. Lorsque l'on ouvre un document numérique, on l'ouvre aussi la plupart du temps avec son environnement d'édition (le logiciel), sans quoi il ne pourrait être interprété et donc interprétable pour l'utilisateur. Le mot « fichier » convient mieux car il est plus spécifique à l'informatique d'une part, d'autre par car il induit l'ouverture avec un logiciel.
 
 ## Média
 Le média est presque un synonyme de médium, mis à part qui'il est plus souvent utilisé lorsque l'on parle de la dynamique de production, diffusion, et consomation des biens culturels (au sens de Y.Citton).
@@ -33,7 +34,7 @@ Dans les sciences de l'information et de la communication, le médium est un sup
 En arts plastiques, le médium est la matière même qui permet d'inscrire le support. Le médium numérique peut donc aussi être la matière numérique. Étant donné que le propre du numérique est d'être immatériel (au sens de J-P.Balpe), la matière numérique peut donc concerner les bits qui circulent dans la machine et leur représentation ("matérialisation") sur l'écran.
 
 ## Support
-
+Le support peut être synonyme du document, tout du moins de l'espace documentaire (Y.Jeanneret) inscriptible. Le terme renvoit aux propriétés matérielles de cet espace. On parle en effet de "support papier/numérique" alors que le terme "document numérique" est moins employé. Lorsqu'il s'agit d'un document numérique, on emploi plus volontier sa dénomination spécifique (un site web, une application, un tweet, un email, un fichier word). Le mot "support" renvoit à un contexte plus général voir au contexte matériel et technique : le cd est un support par exemple.
 
 [^citton]: Citton, Y. (2014), *Pour une écologie de l’attention*, Paris: Seuil.
 
