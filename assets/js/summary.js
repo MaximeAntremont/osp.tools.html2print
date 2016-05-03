@@ -13,7 +13,7 @@ var summary_selector = "#summary",
 
     $summary = $(summary_selector),
     $sl = $(wrap(list_element)).addClass(list_element_class),
-    $parties = $("body h1, body h2, body h3");
+    $parties = $("body h1");
 
     $summary.append($sl);
 
@@ -32,6 +32,34 @@ $parties.each(function(index){
                     $page_indicator = $(wrap("span")),
                     parent_page = $("[data-css-regions-fragment-of='"+fragment+"']");
 
+                $current_list_element.addClass(function(){
+                    var index = parseInt(self.nodeName.match(/\d{1,5}/g)[0]);
+
+                    switch(index){
+                        case 1 :
+                            return "title";
+                        break;
+                        case 2 :
+                            return "subtitle";
+                        break;
+                        case 3 :
+                            return "argument";
+                        break;
+                        case 4 :
+                            return "paragraph";
+                        break;
+                        case 5 :
+                            return "accent";
+                        break;
+                        case 6 :
+                            return "emphase";
+                        break;
+                        default :
+                            return "list-item";
+                        break
+                    }
+                }());
+
                 $current_list_element.append($page_indicator);
                 $sl.append($current_list_element);
 
@@ -45,10 +73,13 @@ $parties.each(function(index){
                 $page_indicator[0]._summary_js.interval = setInterval(
                     function(){
                         var fragment = $self.attr("data-css-regions-fragment-source");
-                        var parent_page = $("[data-css-regions-fragment-of='"+fragment+"']");
-                        var page_number = parent_page.parents("div.paper[id^='page']").attr("id").match(/\d{1,5}/g)[0];
+                        var parent_page = $("[data-css-regions-fragment-of='"+fragment+"']").parents("div.paper[id^='page']");
+                        console.log(parent_page);
+                        var page_number = parent_page.attr("id").match(/\d{1,5}/g)[0];
                         $page_indicator.text(page_number);
-                        window.clearInterval($page_indicator[0]._summary_js.interval);
+                        if(typeof(page_number) != 'undefined'){
+                            window.clearInterval($page_indicator[0]._summary_js.interval);
+                        }
                     }, 3000
                 );
 
