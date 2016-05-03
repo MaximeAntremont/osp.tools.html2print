@@ -20,9 +20,4 @@ J'occupe le poste de designer interactif au Musée des Confluences. Mon travail 
     + un coordinateur de la médiation culturelle, qui fait le lien avec les médiateurs
 
 ## Le village
-Le village sera constitué de moi-même et de l'équipe de médiation du Musée des Confluences.
-J'apporterais, en tant que membres du village des concepteurs de logiciels, mon retour d'expérience
-sur toute la phase de conception des interfaces numériques. Une partie de l'équipe de médiation
-ayant travaillée avec moi sur ces questions me fournira aussi un retour. Je chercherais, auprès des
-autres membres, les allants-de-soit, les influences, les paradigmes, qui régissent leur rapport aux
-interfaces numériques.
+Le village sera constitué de moi-même et de l'équipe de médiation du Musée des Confluences. J'apporterais, en tant que membres du village des concepteurs de logiciels, mon retour d'expérience sur toute la phase de conception des interfaces numériques. Une partie de l'équipe de médiation ayant travaillée avec moi sur ces questions me fournira aussi un retour. Je chercherais, auprès des autres membres, les allants-de-soit, les influences, les paradigmes, qui régissent leur rapport aux interfaces numériques.
