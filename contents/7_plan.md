@@ -3,6 +3,33 @@
 Plan
 =
 
+## Métaphore et abstraction
+
+### La métaphore comme schéma mental
+
++ Mode d'explication intermédiatique
+    + La métaphore comme un paliatif au manque de lexique, au passage d'une ère médiatique à une autre
++ Du skeunomorphisme au matérialisme
+    + Y-a-t il un lexique graphique du numérique ?
++ Apories de la métaphore et dépassements
+    + Confusion et préconceptions néfastes issues des métphores
+
+### Complexe, efficace, accessible
+
++ Paradigme de complexification des logiciels : la barre d'outils
+    + La puissance est une addition de fonctionnalités
++ Relation exponentielle Puissance/Complexité
+    + Schéma actuelle de développement des interfaces logicielles
++ Confusion d'accessibilité et simplicité : appauvrissement de l'interface
+    + L'interface minimaliste et ses problèmes
+
+### Traitement numérique et attention
+
++ Écologie de l'attention et traitement de l'information : seuil, limite, portail
+    + Comment les sous-dispositifs actuellement mis en place en gestion de l'information formatent-ils l'attention ?
++ Pour une esthétique de l'invisible : proposition de dépassement de l'occultation
+    + Comment linterface peut-elle montrer l'invisible ?
+
 ## Paradigmes de conception
 
 ### Opposition du design et du développement
@@ -33,33 +60,6 @@ Plan
     + Proposition de dépassement du paradigme de la boite à outil
 + Création des méthodes par l'utilisateur : proposition de dépassement
     + La programmation comme configuration
-
-## Métaphore et abstraction
-
-### La métaphore comme schéma mental
-
-+ Mode d'explication intermédiatique
-    + La métaphore comme un paliatif au manque de lexique, au passage d'une ère médiatique à une autre
-+ Du skeunomorphisme au matérialisme
-    + Y-a-t il un lexique graphique du numérique ?
-+ Apories de la métaphore et dépassements
-    + Confusion et préconceptions néfastes issues des métphores
-
-### Complexe, efficace, accessible
-
-+ Paradigme de complexification des logiciels : la barre d'outils
-    + La puissance est une addition de fonctionnalités
-+ Relation exponentielle Puissance/Complexité
-    + Schéma actuelle de développement des interfaces logicielles
-+ Confusion d'accessibilité et simplicité : appauvrissement de l'interface
-    + L'interface minimaliste et ses problèmes
-
-### Traitement numérique et attention
-
-+ Écologie de l'attention et traitement de l'information : seuil, limite, portail
-    + Comment les sous-dispositifs actuellement mis en place en gestion de l'information formatent-ils l'attention ?
-+ Pour une esthétique de l'invisible : proposition de dépassement de l'occultation
-    + Comment linterface peut-elle montrer l'invisible ?
 
 ## Usage et confrontation
 

@@ -4,6 +4,11 @@ Lexique (Recherche)
 =
 {: #lexique_recherche}
 
+## Abstraction (Informatique)
+
+En informatique, une couche d’abstraction est une couche logicielle qui implémente l'accès à un composant informatique. Depuis le composants jusqu'aux langages de programmation dits de « hauts niveaux », on trouve un certain nombre de couches d'abstraction qui permettent aux développeurs de ne pas *réinventer la roue* à chaque fois qu'ils veulent accéder aux composants de la machine. En définitif, l'ultime couche d'abstraction est dans le cadre de ce mémoire,l'interface graphique, le langage final de contrôle de l'ordinateur. Dans les fait, le code est déjà compilé et donc il s'agit de langage machine. Mais dans les fait, l'idée d'une abstraction persistante est intéressante pour décrire les décalages qui subsistent entre la structure matérielle de l'ordinateur et son langage inintelligible, et ce qui s'affiche à l'écran, abstrait, conceptualisé, métaphorisé.
+
+
 ## Biens culturels (Y.Citton)
 Mes biens culturels sont toutes les productions visuelles, sonores, audiovisuelles qui nous entourent, sans distinction pour les production qui supportent la production de biens matériels (publicité, promotion, etc.)
 
@@ -20,6 +25,7 @@ J-P.Balpe définit l'immatérialité comme la caractéristique de ce qui peut se
 L'information traitée par un ordinateur constitue selon Y.Jeanneret (Jeanneret, 2007) une première facette de l'information, l'« information1 », qui diffère de l'information interprétée en cela qu'elle inclut des métadonnées qui permettent le traitement du contenu par le calcul. Il s'agit donc d'une information qui ne produit pas de sens à proprement parlé puisque jamais interprété (par le support). Dans sa théorie du support, B.Bachimont (B.Bachimont, 2010) parle aussi de désémantisation de l'écrit dans le support dans le support numérique. La manipulation calculatoire du numérique ne relève pour lui pas du sens mais bien du calcul, de l’algorithme.
 
 ## Document
+
 + On peut définir le document par un "espace documentaire", à savoir la partie du support qui présente l'information. Pour Y.Jeanneret, le document est ce qui fonde une "proposition communicationnelle", un espace visuel hiérarchisé appréhendable pour l'utilisateur, proposant des modalités de lectures. (Y.Jeanneret)
 + En informatique le terme prête à confusion. On parle de « document » alors qu'on ne peut le comparer à un document papier. Lorsque l'on ouvre un document numérique, on l'ouvre aussi la plupart du temps avec son environnement d'édition (le logiciel), sans quoi il ne pourrait être interprété et donc interprétable pour l'utilisateur. Le mot « fichier » convient mieux car il est plus spécifique à l'informatique d'une part, d'autre par car il induit l'ouverture avec un logiciel.
 
