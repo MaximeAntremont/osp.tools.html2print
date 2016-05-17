@@ -12,7 +12,7 @@ Plan
 + Du skeunomorphisme au matérialisme
     + Y-a-t il un lexique graphique du numérique ?
 + Apories de la métaphore et dépassements
-    + Confusion et préconceptions néfastes issues des métphores
+    + Confusion et préconceptions néfastes issues des métaphores
 
 ### Complexe, efficace, accessible
 
@@ -41,7 +41,7 @@ Plan
 + Enjeux des différentes approches design, théories de conception
     + Hiérarchie de l'information, user interface design, user centered design ? De quoi parle-ton vraiment ?
 + L’ethnométhodologie comme figure du dépassement
-    + Comme les méthodes et la posture de l’ethnométhodologue concilie les pratiques
+    + Comment les méthodes et la posture de l’ethnométhodologue concilie les pratiques
 
 ### Discours marchand de l'innovation, du nouveau, de la complexité
 
@@ -65,7 +65,7 @@ Plan
 
 ###  L'omni-logiciel
 
-+ Un anneau pour les gouverner tous et dans les ténèbres les lier
++ Un seul et unique logiciel
     + Critique de la tendance des logiciel à vouloir capter un maximum de public et donc à inclure un maximum de fonctionnalités
 + Le logiciel en tant qu'espace communicationnel
     + Analogie entre l'usage des logiciel et la repartition/spatialisation dans l'espace : une fonction = un lieu, un temps
