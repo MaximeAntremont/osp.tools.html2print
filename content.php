@@ -11,6 +11,7 @@
         "5_etat_de_l_art.md",
         "6_methodologie.md",
         "7_plan.md",
+        "7_1_metaphore_et_abstraction.md",
         "8_annexes.md",
     );
 ?>
@@ -38,5 +39,6 @@
             }
         ?>
         <script src="./assets/js/summary.js"></script>
+        <script src="./assets/js/zoteroLoadBib.js"></script>
     </body>
 </html>
