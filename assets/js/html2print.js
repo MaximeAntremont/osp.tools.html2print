@@ -20,7 +20,9 @@ $(function() {
 
     // Loads main content into <article id="my-story">
     if (content) {
-        $("#my-story").load(content);
+        $("#my-story").load(content, function(){
+            console.log("loaded content");
+        });
     }
 
 
