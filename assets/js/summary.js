@@ -1,93 +1,81 @@
 /**
  * Created by maxim on 01/05/2016.
  */
-function wrap(element, content){
+
+'use strict';
+
+function wrap(element, content) {
     content = content || "";
-    return '<'+element+'>'+content+'</'+element+'>';
+    return '<' + element + '>' + content + '</' + element + '>';
 }
 
-var summary_selector = "#summary",
-    list_element = "ul",
-    list_element_class = "summary_list",
-    list_children_element = "li",
 
-    $summary = $(summary_selector),
-    $sl = $(wrap(list_element)).addClass(list_element_class),
-    $parties = $("body h1");
+function loadSummary() {
+    var $myStory = $('#my-story'),
+        $parties = $myStory.find('h1, h2, h3').slice(1),
+        $summary = $myStory.find('#summary'),
+        sumArr = [];
 
-    $summary.append($sl);
+    var parties_process = new Promise(function (resolve, reject) {
+        var length = $parties.length,
+            p = 0;
+        $parties.each(function () {
+            var self = this,
+                nb = new Promise(function (resolve, reject) {
+                    var interval = setInterval(function () {
+                        var _nb = self.dataset.cssRegionsFragmentSource;
+                        if (typeof(nb) != 'undefined') {
+                            clearInterval(interval);
+                            resolve(_nb);
+                        }
+                    }, 100);
+                }),
+                $clone,
+                pageNb;
+            nb.then(function (val) {
+                    $clone = $("[data-css-regions-fragment-of=" + val + "]");
+                console.log(val, $clone);
+                    pageNb = new Promise(function (resolve, reject) {
+                        var interval = setInterval(function () {
+                            var parent = $clone[0].parentNode;
 
-console.log($parties);
-
-$parties.each(function(index){
-    var self = this;
-    var $self = $(self);
-
-    var interval = setInterval(
-        function(){
-            var fragment = $self.attr("data-css-regions-fragment-source");
-
-            if(typeof(fragment) != 'undefined'){
-                var $current_list_element = $(wrap(list_children_element, self.textContent)),
-                    $page_indicator = $(wrap("span")),
-                    parent_page = $("[data-css-regions-fragment-of='"+fragment+"']").parents("div.paper[id^='page']");
-
-                $current_list_element.addClass(function(){
-                    var index = parseInt(self.nodeName.match(/\d{1,5}/g)[0]);
-
-                    switch(index){
-                        case 1 :
-                            return "title";
-                        break;
-                        case 2 :
-                            return "subtitle";
-                        break;
-                        case 3 :
-                            return "argument";
-                        break;
-                        case 4 :
-                            return "paragraph";
-                        break;
-                        case 5 :
-                            return "accent";
-                        break;
-                        case 6 :
-                            return "emphase";
-                        break;
-                        default :
-                            return "list-item";
-                        break
-                    }
-                }());
-
-                if(parent_page.length > 0) {
-                    $current_list_element.append($page_indicator);
-                    $sl.append($current_list_element);
-                    window.clearInterval(interval);
-
-                    console.log(parent_page, fragment);
-
-                    var page_number = parent_page.attr("id").match(/\d{1,5}/g)[0];
-
-                    $page_indicator.addClass("summary_element");
-                    $page_indicator.text(page_number);
-
-                    $page_indicator[0]._summary_js = {};
-
-                    $page_indicator[0]._summary_js.interval = setInterval(
-                        function(){
-                            var fragment = $self.attr("data-css-regions-fragment-source");
-                            var parent_page = $("[data-css-regions-fragment-of='"+fragment+"']").parents("div.paper[id^='page']");
-                            console.log(parent_page);
-                            var page_number = parent_page.attr("id").match(/\d{1,5}/g)[0];
-                            $page_indicator.text(page_number);
-                            if(typeof(page_number) != 'undefined'){
-                                window.clearInterval($page_indicator[0]._summary_js.interval);
+                            while (parent.id.match(/page-\d+/) == null) {
+                                parent = parent.parentNode;
                             }
-                        }, 3000
-                    );
+
+                            if (parent.id.match(/page-(\d+)/)[1] !== 1) {
+                                resolve(parent.id.match(/page-(\d+)/)[1]);
+                                clearInterval(interval);
+                            }
+
+                        }, 100);
+                    });
+
+                    pageNb.then(function (val) {
+                        sumArr.push({obj: $(self).clone(), page: val});
+                        p++;
+                    });
+                    /* $summary.append($(self).clone());
+                     $summary.append($("<span>"+pageNb()+"</span>"));*/
                 }
+            ).catch(function (val) {
+                console.warn("err:", val);
+            });
+        });
+
+        var interval = setInterval(function () {
+            if (p == length) {
+                clearInterval(interval);
+                resolve(true);
             }
-        }
-    ,1000);
-});
+        }, 100);
+    });
+
+    parties_process.then(function () {
+        sumArr.forEach(function (el) {
+            $summary.append(
+                el.obj.addClass('summary-title').attr("data-page-nb", el.page)
+            )
+        });
+    });
+}

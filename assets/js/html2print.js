@@ -7,10 +7,17 @@ if (window.chrome) {
     document.getElementsByTagName('head')[0].appendChild(script);
 };
 
+window.H2P = {
+    onloaded : function(){
+        console.log("loaded content");
+    }
+};
+
 $(function() {
     // ________________________________ INIT __________________________________ //
     // Creating crop marks
-    $("#master-page").append("<div class='crops'><div class='crop-top-left'><span class='bleed'></span></div><div class='crop-top-right'><span class='bleed'></span></div><div class='crop-bottom-right'><span class='bleed'></span></div><div class='crop-bottom-left'><span class='bleed'></span></div></div>")
+    //$("#master-page").append("<div class='crops'><div class='crop-top-left'><span class='bleed'></span></div><div class='crop-top-right'><span class='bleed'></span></div><div class='crop-bottom-right'><span class='bleed'></span></div><div class='crop-bottom-left'><span class='bleed'></span></div></div>")
+   $("<div class='crops'><div class='crop-top-left'><span class='bleed'></span></div><div class='crop-top-right'><span class='bleed'></span></div><div class='crop-bottom-right'><span class='bleed'></span></div><div class='crop-bottom-left'><span class='bleed'></span></div></div>").insertBefore("#master-page .page");
 
     // Cloning the master page
     for (i = 1; i < nb_page; i++){
@@ -21,7 +28,7 @@ $(function() {
     // Loads main content into <article id="my-story">
     if (content) {
         $("#my-story").load(content, function(){
-            console.log("loaded content");
+            H2P.onloaded();
         });
     }
 

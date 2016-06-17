@@ -59,6 +59,10 @@ $(function() {
             doc.find('body').scrollTop(offsetTop);
         });
 
+        $("#refresh").on('click', function() {
+            $("iframe").get(0).contentWindow.location.reload();
+        });
+
         $("#print").on('click', function() {
             $("iframe").get(0).contentWindow.print();
         });

@@ -1,6 +1,8 @@
 <?php
     include_once "./interpreter/functions.php";
 
+    $export = isset($_GET["export"]);
+
     $file = "0_memoire.md"
 ?>
 
@@ -29,5 +31,12 @@
             <!-- Ici le plugins summary js va mettre la bibliographie -->
         </ul>
         <div class="region-break"></div>
+    <?php
+        if($export):
+    ?>
+        <script src="assets/js/summary_export.js"></script>
+    <?php
+        endif;
+    ?>
     </body>
 </html>

@@ -33,6 +33,6 @@ def loadRequired(text)
   return text
 end
 
-out_file = File.new("out.md", "w")
-out_file.puts(loadRequired(content));
+out_file = File.new("out.html", "w")
+out_file.puts(Kramdown::Document.new(loadRequired(content)).to_html);
 out_file.close
