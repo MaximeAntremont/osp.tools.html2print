@@ -1,19 +1,7 @@
 <?php
     include_once "./interpreter/functions.php";
 
-    $files_to_load = array(
-        "1_Introduction.md",
-        "2_parcours.md",
-        "3_terrain.md",
-        "4_1_lexique_terrain.md",
-        "4_2_lexique_recherche.md",
-        "4_3_lexique_d_ethnomethodologie.md",
-        "5_etat_de_l_art.md",
-        "6_methodologie.md",
-        "7_plan.md",
-        "7_1_metaphore_et_abstraction.md",
-        "8_annexes.md",
-    );
+    $file = "0_memoire.md"
 ?>
 
 <!DOCTYPE html>
@@ -33,12 +21,13 @@
         </div>
         <div class="region-break"></div>
         <?php
-            foreach ($files_to_load as $file) {
                 parse_file($file);
                 echo "<div class='region-break'></div>";
-            }
         ?>
-        <script src="./assets/js/summary.js"></script>
-        <script src="./assets/js/zoteroLoadBib.js"></script>
+        <h1>Bibliographie</h1>
+        <ul id="bibliography">
+            <!-- Ici le plugins summary js va mettre la bibliographie -->
+        </ul>
+        <div class="region-break"></div>
     </body>
 </html>

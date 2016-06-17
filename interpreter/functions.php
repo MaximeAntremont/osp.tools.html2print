@@ -15,3 +15,8 @@ function parse_file($file_name){
 function show_directory(){
     echo getcwd();
 }
+
+function parseRefs($text){
+    preg_match('/\(.{5,30}\)/', $text, $matches);
+    var_dump($matches);
+}

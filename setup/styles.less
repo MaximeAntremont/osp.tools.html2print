@@ -3,10 +3,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-.summary_element{
-  float: right;
-}
-
 pre.code{
   background-color: #ccc;
   padding:15px;
@@ -21,23 +17,42 @@ pre, code.code{
   word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
-.summary_list{
-  line-height: 28px;
-  .title{
-
-  }
-  .subtitle{
-    list-style: circle;
-    font-size: 0.85em;
-    margin-left: 15px;
-  }
-  .argument{
-    list-style: rectangle;
-    font-size: 0.80em;
-    margin-left: 30px;
+.summary-title{
+  &:after{
+    content: attr(data-page-nb);
+    float: right;
   }
 }
 
 .legende{
   font-size: 0.80em;
+}
+//1046.92  914.637
+// 210     183,465
+.abstract{
+  font-style: italic;
+}
+
+.quarter{
+  width: 25%;
+  //display: inline-block;
+}
+
+.gallery{
+  white-space: nowrap;
+}
+
+.max-height{
+  margin:0;
+  padding: 0;
+    img{
+      height: 297-(@footer-height + @header-height + @page-margin-top + @page-margin-bottom);
+      width: auto;
+    }
+}
+
+code.toolFunction, code.variable{
+  border: 1px solid black;
+  font-weight: bold;
+  white-space: nowrap;
 }

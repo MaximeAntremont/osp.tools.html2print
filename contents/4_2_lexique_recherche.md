@@ -12,7 +12,7 @@ En informatique, une couche d’abstraction est une couche logicielle qui implé
 Les biens culturels sont toutes les productions visuelles, sonores, audiovisuelles qui nous entourent, sans distinction pour les production qui supportent la production de biens matériels (publicité, promotion, etc.)
 
 ## Biens matériels
-Les biens matériels sont le deuxième pendant, avec les biens culturels, de la distinction que fait Y. Citton (Y. Citton, 2014[^citton]). Il s'agit de tous les objets de consommation classique, qu'ils soient consommables ou pérennes.
+Les biens matériels sont le deuxième pendant, avec les biens culturels, de la distinction que fait Y. Citton (Citton 2014). Il s'agit de tous les objets de consommation classique, qu'ils soient consommables ou pérennes.
 
 ## Computationnel
 Qui a attrait à ce qui est computé, c'est à dire calculé de manière logico-mathématique. Les algorithmes sont des définitions de computations qui une fois exécutés produisent des éléments computés. Dans nos ordinateurs, toutes les actions de recherche, de filtrage, d'indexation, d'association automatique, sont des computations.
@@ -21,11 +21,11 @@ Qui a attrait à ce qui est computé, c'est à dire calculé de manière logico-
 J-P. Balpe définit l'immatérialité comme la caractéristique de ce qui peut se manifester sous différentes formes. *ex: les données d'une base de données.*
 
 ## Information (donnée)
-L'information traitée par un ordinateur constitue selon Y. Jeanneret (Jeanneret, 2007) une première facette de l'information, l'« information1 », qui diffère de l'information interprétée en cela qu'elle inclut des métadonnées qui permettent le traitement du contenu par le calcul. Il s'agit donc d'une information qui ne produit pas de sens à proprement parlé puisque jamais interprété (par le support). Dans sa théorie du support, B. Bachimont (B. Bachimont, 2010) parle aussi de désémantisation de l'écrit dans le support dans le support numérique. La manipulation calculatoire du numérique ne relève pour lui pas du sens mais bien du calcul, de l’algorithme.
+L'information traitée par un ordinateur constitue selon Y. Jeanneret (Jeanneret 2007) une première facette de l'information, l'« information1 », qui diffère de l'information interprétée en cela qu'elle inclut des métadonnées qui permettent le traitement du contenu par le calcul. Il s'agit donc d'une information qui ne produit pas de sens à proprement parlé puisque jamais interprété (par le support). Dans sa théorie du support, B. Bachimont (Bachimont 2010) parle aussi de désémantisation de l'écrit dans le support dans le support numérique. La manipulation calculatoire du numérique ne relève pour lui pas du sens mais bien du calcul, de l’algorithme.
 
 ## Document
 
-+ On peut définir le document par un "espace documentaire", à savoir la partie du support qui présente l'information. Pour Y. Jeanneret, le document est ce qui fonde une "proposition communicationnelle", un espace visuel hiérarchisé appréhendable pour l'utilisateur, proposant des modalités de lectures. (Y. Jeanneret)
++ On peut définir le document par un "espace documentaire", à savoir la partie du support qui présente l'information. Pour Y. Jeanneret, le document est ce qui fonde une "proposition communicationnelle", un espace visuel hiérarchisé appréhendable pour l'utilisateur, proposant des modalités de lectures. (Jeanneret 2007)
 + En informatique le terme prête à confusion. On parle de « document » alors qu'on ne peut le comparer à un document papier. Lorsque l'on ouvre un document numérique, on l'ouvre aussi la plupart du temps avec son environnement d'édition (le logiciel), sans quoi il ne pourrait être interprété et donc interprétable pour l'utilisateur. Le mot « fichier » convient mieux car il est plus spécifique à l'informatique d'une part, d'autre par car il induit l'ouverture avec un logiciel.
 
 ## Média
@@ -46,5 +46,3 @@ Acronyme de « What you see is all there is », utilisé en opposition au WYSIWY
 
 ## WIMP
 Acronyme de « Windows, Icons, Menus and Pointer (ou pointing device) », qui califie tout système d'information numérique dan slequel on retrouve des fenêtres, des icones, des menus déroulants et un dispositif qui permet de cliquer sur les éléments graphiques. C'est le cas de tous les systèmes d'exploitation pour ordinateurs personnels.
-
-[^citton]: Citton, Y. (2014), *Pour une écologie de l’attention*, Paris: Seuil.
